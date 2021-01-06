@@ -17,7 +17,7 @@ spec:
           name: image-ms
           resources:
             requests:
-              cpu: "320m"
+              cpu: "100m"
           env:
             - name: SPRING.APPLICATION.ENVIRONMENTTYPE
               value: "prod"

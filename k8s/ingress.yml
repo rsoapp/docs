@@ -14,3 +14,11 @@ spec:
         backend:
           serviceName: image-ms
           servicePort: 8080
+      - path: /v1/sms/*
+        backend:
+          serviceName: sms-ms
+          servicePort: 8080
+      - path: /v1/user/*
+        backend:
+          serviceName: user-ms
+          servicePort: 8080
