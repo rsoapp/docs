@@ -1,0 +1,2 @@
+applicationName: "sms-service" and environmentType: "prod"  and requestUri: "/v1/sms/send"
+applicationName: "ad-service" and method: "GET" and requestUri: "v1/ads/user"

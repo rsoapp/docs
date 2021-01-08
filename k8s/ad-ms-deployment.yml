@@ -19,7 +19,7 @@ spec:
             requests:
               cpu: "100m"
           env:
-            - name: SPRING.APPLICATION.ENVIRONMENTTYPE
+            - name: SPRING_APPLICATION_ENVIRONMENTTYPE
               value: "prod"
             - name: SERVER_PORT
               value: "8080"
@@ -32,6 +32,8 @@ spec:
                 secretKeyRef:
                   name: ad-pg-pass
                   key: password
+            - name: SPRING_APPLICATION_NSFWDETECTION
+              value: "true"
           ports:
             - containerPort: 8080
               name: server
